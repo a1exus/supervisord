@@ -9,3 +9,10 @@
 ---
 
 * [Adding a Program](http://supervisord.org/running.html#adding-a-program)
+
+```
+$ cat foo.ini 
+[program:foo]
+command=/bin/cat
+$ 
+```
