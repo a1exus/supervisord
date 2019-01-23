@@ -1,0 +1,6 @@
+version: "2.2"
+services:
+  supervisord:
+    build: ./
+    volumes:
+      - ./supervisor.d/:/etc/supervisor.d/
