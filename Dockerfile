@@ -2,8 +2,7 @@ FROM alpine:latest
 
 MAINTAINER alexus@gmail.com
 
-RUN apk update &&\
-	apk add supervisor &&\
+RUN apk add --no-cache supervisor &&\
 	mkdir /etc/supervisor.d/
 
 COPY *.ini /etc/supervisor.d/
