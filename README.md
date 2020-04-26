@@ -22,9 +22,7 @@ $
 via `docker-compose`:
 
 ```
-$ touch foo.ini
 $ mkdir ./supervisor.d/
+$ $EDITOR ./supervisor.d/foo.ini
 $ docker-compose up --detach --build
-...
-$ 
 ```
