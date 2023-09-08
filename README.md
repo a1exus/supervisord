@@ -8,14 +8,6 @@
 
 ---
 
-* [Adding a Program](http://supervisord.org/running.html#adding-a-program)
-
-```
-$ cat foo.ini 
-[program:foo]
-command=/bin/cat
-$ 
-```
 via `docker`:
 
 ```
@@ -29,7 +21,16 @@ $
 via `docker-compose`:
 
 ```
+$ docker-compose up --detach --build
+```
+
+* [Adding a Program](http://supervisord.org/running.html#adding-a-program)
+
+```
 $ mkdir ./supervisor.d/
 $ $EDITOR ./supervisor.d/foo.ini
-$ docker-compose up --detach --build
+$ cat ./foo.ini 
+[program:foo]
+command=/bin/cat
+$ 
 ```
